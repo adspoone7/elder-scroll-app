@@ -1,6 +1,7 @@
-## Available Scripts
-
 In the project directory, you can run:
+
+### `npm install`
+Installs node modules (please run if uncertain).
 
 ### `npm start`
 
@@ -19,3 +20,8 @@ The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+For this project, after cloning this Git repository:
+1) Navigate to project directory on your local machine(ex. C:\Users\...\elder-scroll-app-master>cd elder-scroll-app)
+2) npm install
+3) npm start
