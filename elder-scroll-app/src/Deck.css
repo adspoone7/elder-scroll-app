@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.searchbar-container{
+    z-index: 9999;
+  }
+  
+.searchbar{
+    border: none;
+    border-radius: 5px;
+    padding-top: 10px;
+    margin: 10px;
+  }
+  
+.searchbar:focus{
+  outline: none;
+  }
+
+.container{
+  background:rgba(243, 240, 240, 0.884);
+  background-image: radial-gradient(white 33%, rgba(243, 240, 240, 0.1) 66%, rgba(34, 61, 134, 0.1) 100%);
+  border-radius: 10px;
+  box-shadow: -1px 10px 20px -10px black;
+  margin: 25px;
+}
+
+img {
+    width: 50%;
+    padding-top: 25px;
+  }
+
+.cards {
+  max-width: 1200px;
+  display: grid;
+  grid-gap: 1rem;
+  padding: 10px;
+}
+
+@media (min-width: 600px) {
+  .cards { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 900) {
+  .cards { grid-template-columns: repeat(4, 1fr); }
+}
+
+.card-name {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.card-rarity {
+  font-size: 18px;
+  font-weight: 500;
+  color: cornflowerblue;
+}
+
+.card-set-name {
+  font-size: 18px;
+  font-weight: 500;
+  color: grey;
+  margin: 3px;
+}
+
+.card-type {
+  font-size: 18px;
+  font-weight: 800;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card-description {
+  padding: 20px;
+  margin-bottom: 10px;  
+}
