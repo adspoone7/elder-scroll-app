@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Deck from './Deck.js';
+import './InfiniteScroll.css'
 import Loader from 'react-loader-spinner';
-
 
 export default class InfiniteScroll extends Component {
     constructor(props) {
@@ -10,8 +10,7 @@ export default class InfiniteScroll extends Component {
             isLoading: false,
             sizePerPage: 20,
             page: 1,
-            data: [],
-            scrollTop: window.pageYOffset || document.documentElement.scrollTop
+            data: []
         };
         window.onscroll = (() => {
             this.loadMore();
@@ -48,7 +47,6 @@ export default class InfiniteScroll extends Component {
                 page: this.state.page + .5
             })
             this.loadCard();
-            window.pageYOffset = 20;
         }
     }
 
@@ -61,16 +59,11 @@ export default class InfiniteScroll extends Component {
 
         return (
             <div>
-                {isLoading ? <div
-                    style={{
-                        width: "100%",
-                        height: "100",
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center"
-                    }}
-                > <Loader type="ThreeDots" color="cornflowerblue" height="350" width="350" />
-                </div> : <Deck value={data}></Deck>}
+                <div className="es-title">The Elder Scrolls</div>
+                {isLoading ?
+                    <div className='loader'>
+                        <Loader type="ThreeDots" color="cornflowerblue" height="350" width="350" />
+                    </div> : <Deck value={data}></Deck>}
             </div>
         )
     }

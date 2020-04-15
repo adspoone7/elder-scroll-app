@@ -43,8 +43,8 @@ export default class Deck extends Component {
 
     handleChange(e) {
         let filteredData = this.filterCardData(e);
-        let match = this.findMatches(filteredData);
-        this.setState({ match: match });
+        let foundMatches = this.findMatches(filteredData);
+        this.setState({ match: foundMatches });
     }
 
     componentDidMount() {

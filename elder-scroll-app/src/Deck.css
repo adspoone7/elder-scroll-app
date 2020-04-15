@@ -6,8 +6,8 @@
   
 .searchbar{
     border: none;
-    border-radius: 5px;
-    padding-top: 10px;
+    border-radius: 2px;
+    padding-top: 1px;
     margin: 10px;
   }
   
@@ -17,9 +17,9 @@
 
 .container{
   background:rgba(243, 240, 240, 0.884);
-  background-image: radial-gradient(white 33%, rgba(243, 240, 240, 0.1) 66%, rgba(34, 61, 134, 0.1) 100%);
+  background-image: radial-gradient(white 33%, rgba(243, 240, 240, 0.1) 66%, rgba(34, 61, 134, 0.1) 80%);
   border-radius: 10px;
-  box-shadow: -1px 10px 20px -10px black;
+  box-shadow: -1px 12px 24px -2px black;
   margin: 25px;
 }
 

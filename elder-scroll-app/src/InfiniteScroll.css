@@ -1,0 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=MedievalSharp);
+
+.es-title{
+    font-family: 'MedievalSharp';
+    font-weight: 900px;
+    font-size: 72px;
+    color: rgba(255, 255, 255, 0.733);
+    margin: 20px;
+}
+
+.loader{
+    width: "100%";
+    height: "100";
+    display: "flex";
+    justify-Content: "center";
+    align-Items: "center"
+}
